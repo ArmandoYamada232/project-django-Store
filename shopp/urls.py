@@ -13,4 +13,5 @@ Cliente faz http request e o site retorna com uma http response
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('store.urls')),]
+    path('', include('store.urls')),
+]
