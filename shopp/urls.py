@@ -11,11 +11,19 @@ Nunca começar um caminho com barra, pode terminar mas nunca começar"""
 """
 Cliente faz http request e o site retorna com uma http response
 """
-def my_view_dois(request):
+def home(request):
+    return HttpResponse ('home')
+
+def sobre(request):
     return HttpResponse ('Sobre')
+
+def contato(request):
+    return HttpResponse ('contato')
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('store.urls')),
-    path('sobre/', my_view_dois)
+    path('home/', home),
+    path('sobre/', sobre),
+    path('contato/', contato),
 ]
