@@ -22,6 +22,6 @@ posso criar um name_space para arquivos globais com o name space global
 
 # Pode criar uma variável para ir para o template usando context
 def home(request):
-    return render(request, 'store/index.html', status=200, context={
+    return render(request, 'store/pages/index.html', status=200, context={
         'name':'Armando Yamada'
     })

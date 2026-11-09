@@ -1,0 +1,28 @@
+<!-- Esse name é uma variavel que foi declarada no context e utiliza-se duas 
+ chaves para declarar a variavel com name que foi declarado como dicionario-->
+<!--Container main header container é o container maior que ocupa toda a tela-->
+<!--Container main header é o container menor com uma classe container que é para mexer
+em todos que tiverem essa classe também-->
+
+<!--Se todas as partes do site vai usar a mesma head é importante separar ela para evitar repetição-->
+
+<!--Partials é onde ficará as partes parciais como o head -->
+<!--Pages é onde ficará as páginas completas -->
+
+<!--Esse include é para incluir o head que foi movido para partials
+essa chave com porcentagem executa uma tarefa e duas chaves mostra algo-->
+
+{% include "store/partials/head.html" %}
+<body>
+    <header class="main-header-container">
+        <div class="main-header container">
+            <h1>
+                <a href="#"><i class="fas fa-store"></i>
+                    <span>Store {{name}}</span>
+                </a>
+            </h1>
+        </div>
+    </header>
+</body>
+
+</html>
