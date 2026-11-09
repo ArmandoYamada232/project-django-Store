@@ -20,5 +20,8 @@ dentro da pasta template para evitar colisão de nomes
 posso criar um name_space para arquivos globais com o name space global
 """
 
+# Pode criar uma variável para ir para o template usando context
 def home(request):
-    return render(request, 'store/index.html')
+    return render(request, 'store/index.html', status=200, context={
+        'name':'Armando Yamada'
+    })
