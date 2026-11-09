@@ -12,6 +12,9 @@ https://docs.djangoproject.com/en/6.1/ref/settings/
 
 from pathlib import Path
 
+# Ele resolve e aponta para a raiz do projeto e disponibliza acesso 
+# ao caminho completo da raiz do site
+
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -51,11 +54,24 @@ MIDDLEWARE = [
 ]
 
 ROOT_URLCONF = 'shopp.urls'
+"""
 
+Django da prioridade a pasta que estiver no dirs e na ordem também
+
+SEMPRE UTILIZAR NAME_SPACE para os arquivos de template para evitar colisão de nomes
+ou seja criar uma pasta dentro da pasta templates com um nome da pasta ser o name_space
+
+Na views adicionar o name_space que eu criei na função ao lado do caminho da página html
+
+Em Dirs usar o BASE_DIR / string com nome da pasta
+
+"""
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [
+            BASE_DIR / 'templates','base_templates',
+        ],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
