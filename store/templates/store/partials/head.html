@@ -171,6 +171,29 @@
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: var(--spacing-gutter-medium);
         }
+
+        .shop-list-item {
+            max-width: 64rem;
+        }
+
+        /*No box shadow pode ser definido 3 parametros de altura e a cor*/
+        /*Essa primeira altura se for negativo joga para o lado esquerdo*/
+        /*Essa segunda altura se for negativo joga para cima*/
+        /*Essa terceira altura se for negativo joga para direita*/
+        .shop {
+            background-color: var(--color-white);
+            box-shadow: -5px 5px 12px rgba(0, 0, 0, 0.5);
+            transform: scale(1);
+            transition: all 300ms ease-in-out;
+        }
+
+        .shop img {
+            max-width: 100%;
+        }
+
+        .shop-list-item:hover {
+            transform: scale(1.02);
+        }
     </style>
 
 </head>
