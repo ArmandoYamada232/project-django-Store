@@ -81,6 +81,7 @@
             font-size: 1.6rem;
             font-family: var(--font-primary);
             background-color: var(--color-gray-2);
+            color: var(--color-dark-text);
         }
 
         h1,
@@ -170,6 +171,7 @@
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
             gap: var(--spacing-gutter-medium);
+
         }
 
         .shop-list-item {
@@ -187,12 +189,53 @@
             transition: all 300ms ease-in-out;
         }
 
+        .shop-list-item {
+            border-radius: 10px;
+
+        }
+
         .shop img {
             max-width: 100%;
+            border-radius: 10px;
         }
 
         .shop-list-item:hover {
             transform: scale(1.02);
+            box-shadow: -8px 8px 18px rgba(0, 0, 0, .20);
+        }
+
+        .shop-title-container {
+            padding: var(--spacing-gutter-minimun);
+            padding-bottom: calc(var(--spacing-gutter-minimun)/2);
+        }
+
+        /*Esse padding 0 na frente é porque ele não tem padding em cima nem embaixo só nos lados*/
+        .shop-author {
+            padding: 0 var(--spacing-gutter-minimun);
+            color: var(--color-gray-4);
+        }
+
+        .shop-author-item {
+            margin-right: 1rem;
+        }
+
+        .icone-author {
+            margin-right: 1rem;
+        }
+
+        .shop-preco {
+            padding: var(--spacing-gutter-minimun);
+            padding-top: calc(var(--spacing-gutter-minimun)/2);
+        }
+
+        .shop-author a {
+            text-decoration: none;
+            color: var(--color-gray-7);
+            transition: all 300ms ease-in-out;
+        }
+
+        .shop-author a:hover {
+            color: var(--color-primary-dark);
         }
     </style>
 
