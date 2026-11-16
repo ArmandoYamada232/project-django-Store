@@ -11,6 +11,10 @@ Nunca começar um caminho com barra, pode terminar mas nunca começar"""
 Cliente faz http request e o site retorna com uma http response
 """
 
+"""
+Quando for mexer para criar outras urls tem que mexer no urls do app store"""
+
+
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('store.urls')),
