@@ -131,8 +131,17 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/6.1/howto/static-files/
 
-STATIC_URL = 'static/'
+""" Esse static aqui é para arquivos que estão fora do app para serem carregados como arquivos estaticos
+SEMPRE QUANDO FOR TRABALHAR COM CAMINHOS EM DJANGO TEM QUE USAR O DIRS (QUE É A PASTA BASE)
 
+lembrar que tem que colocar o caminho do link do css no head 
+
+"""
+
+STATIC_URL = '/static/'
+STATICFILES_DIRS = [
+    BASE_DIR / 'base_static',
+]
 
 # Email
 # https://docs.djangoproject.com/en/6.1/topics/email/#topic-email-configuration
