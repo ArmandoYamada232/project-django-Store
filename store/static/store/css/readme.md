@@ -6,3 +6,12 @@ pasta static -> pasta com name_space(pasta com mesmo nome do app - utilizado com
 o projeto pode ter arquivos staticos que não estão atrelados a nenhum app ou seja colocando ele no static files dirs indique ao django onde buscar arquivos staticos
 
 pasta fora do projeto -> base_static -> global(name_space) -> css -> arquivo
+
+
+A equipe do django utiliza um comando para coletar todos os arquivos estaticos e juntar só em um arquivo
+comando: py manage.py collectstatic 
+
+para funcionar precisa configurar o staticRoot -> caminho da pasta que eu quero que salve todos
+os arquivos estaticos da minha aplicação 
+
+deve se configurar em settings
