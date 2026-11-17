@@ -15,3 +15,4 @@ para funcionar precisa configurar o staticRoot -> caminho da pasta que eu quero 
 os arquivos estaticos da minha aplicação 
 
 deve se configurar em settings
+

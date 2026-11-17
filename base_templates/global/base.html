@@ -1,0 +1,12 @@
+{% include "store/partials/head.html" %}
+
+<body>
+    {% include "store/partials/header.html" %}
+    {% include "store/partials/search-container.html" %}
+
+    <main class="main-content-container">
+        {% block content %}{% endblock content %}
+    </main>
+    
+    {% include "store/partials/footer.html" %}
+</body>
