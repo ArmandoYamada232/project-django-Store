@@ -4,10 +4,14 @@ from . import views
  Tem que criar outra view se quiser outra página e depois que criar a view cria o caminho que
 aponta a view
 
-para colocar o id na minha página é só colocar <id>/ depois da barra / e na view que é relacionada
-a página com id criar um parametro id lá na função do lado de request 
+para criar url dinâmicas
+
+para colocar o id na minha página é só colocar conversor antes dos : <slug:id>/ depois da barra / e na view que é relacionada
+a página com id criar um parametro id lá na função do lado de request
+
+slug, int etc
 """
 urlpatterns = [
     path('', views.home, name='home'),
-    path('store/<id>/', views.store, name='store'),
+    path('store/<int:id>/', views.store, name='store'),
 ]

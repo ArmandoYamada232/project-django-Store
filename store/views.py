@@ -27,6 +27,6 @@ def home(request):
     })
 
 def store(request, id):
-    return render(request, 'store/pages/index.html', status=200, context={
+    return render(request, 'store/pages/shop-view.html', status=200, context={
         'name':'Armando Yamada'
     })
