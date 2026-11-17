@@ -189,6 +189,17 @@ h6 {
     padding-bottom: calc(var(--spacing-gutter-minimun)/2);
 }
 
+.shop-title-container a{
+    text-decoration: none;
+    color: var(--color-gray-7);
+    transition: 300ms all ease-in-out;
+    font-family: 'Roboto Slab';
+}
+
+.shop-title-container a:hover{  
+    color: var(--color-primary-dark);
+}
+
 /*Esse padding 0 na frente é porque ele não tem padding em cima nem embaixo só nos lados*/
 .shop-author {
     padding: 0 var(--spacing-gutter-minimun);
