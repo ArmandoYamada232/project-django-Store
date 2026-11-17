@@ -1,5 +1,9 @@
-{% include "store/partials/head.html" %}
-
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    {% include "store/partials/head.html" %}
+    <title>{% block title %}{% endblock title %} Store</title>
+</head>
 <body>
     {% include "store/partials/header.html" %}
     {% include "store/partials/search-container.html" %}
@@ -10,3 +14,5 @@
     
     {% include "store/partials/footer.html" %}
 </body>
+
+</html>
