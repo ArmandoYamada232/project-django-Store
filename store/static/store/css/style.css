@@ -154,6 +154,7 @@ h6 {
 
 .shop-list-item {
     max-width: 64rem;
+    height: fit-content;
 }
 
 /*No box shadow pode ser definido 3 parametros de altura e a cor*/
@@ -174,7 +175,7 @@ h6 {
 
 }
 
-.shop img {
+.shop-img img {
     max-width: 100%;
 
 }
@@ -189,14 +190,14 @@ h6 {
     padding-bottom: calc(var(--spacing-gutter-minimun)/2);
 }
 
-.shop-title-container a{
+.shop-title-container a {
     text-decoration: none;
     color: var(--color-gray-7);
     transition: 300ms all ease-in-out;
     font-family: 'Roboto Slab';
 }
 
-.shop-title-container a:hover{  
+.shop-title-container a:hover {
     color: var(--color-primary-dark);
 }
 

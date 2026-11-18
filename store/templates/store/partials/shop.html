@@ -1,20 +1,27 @@
 <div class="shop shop-list-item">
     <div class="shop-image">
-        <img src="https://placehold.co/1280x720.png" alt="image-cover-shop">
+        <img src="{{ store.cover.url }}" alt="image-cover-shop">
     </div>
     <div class="shop-title-container">
-        <a href="/store/3/"><h2>{{ store.title }}</h2></a>
+        <a href="/store/3/">
+            <h2>{{ store.title }}</h2>
+        </a>
     </div>
     <div class="shop-author">
         <span class="shop-author-item">
             <a href=""><i class="fas fa-user icone-author"></i>{{ store.store_name }}</a>
         </span>
 
+        <span class="shop-author-item">
+            <i class="fas fa-calendar-alt"></i>
+            16/10/2021 às 11:21
+        </span>
+
         <!--categoria vai para todas as categorias-->
         <!--categoria aneis irá só para aneis-->
         <span class="shop-author-item">
             <a href="#" class="category-category">
-                <i class="shop-category ">Category:</i>
+                <i class="shop-category ">Category</i>
             </a>
             :
             <a href="/shop/category/acessorios/" class="category-specific">
@@ -25,7 +32,7 @@
     </div>
     <div class="shop-preco">
         <span class="shop-preco-item">
-            <a href="/store/3/">R$ 134,90</a>
+            <a href="/store/3/">R$ {{ store.price }}</a>
         </span>
     </div>
 </div>
