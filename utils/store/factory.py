@@ -15,6 +15,9 @@ def make_shopp():
         'category': {
             'name': fake.word()
         },
+        'category_specific':{
+            'name_specific': fake.word()
+        },
         'cover': {
             'url':'https://loremflickr.com/%s/%s/jewelry' %rand_ration()
         },

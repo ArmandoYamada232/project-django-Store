@@ -3,26 +3,23 @@
         <img src="https://placehold.co/1280x720.png" alt="image-cover-shop">
     </div>
     <div class="shop-title-container">
-        <a href="/store/3/"><h2> produto</h2></a>
+        <a href="/store/3/"><h2>{{ store.title }}</h2></a>
     </div>
     <div class="shop-author">
         <span class="shop-author-item">
-            <a href=""><i class="fas fa-user icone-author"></i>loja tal</a>
+            <a href=""><i class="fas fa-user icone-author"></i>{{ store.store_name }}</a>
         </span>
-        <span class="shop-author-item">
-            <i class="fas fa-calendar-alt"></i>
-            16/10/2021 às 11:21
-        </span>
+
         <!--categoria vai para todas as categorias-->
         <!--categoria aneis irá só para aneis-->
         <span class="shop-author-item">
             <a href="#" class="category-category">
-                <i class="shop-category ">categoria</i>
+                <i class="shop-category ">Category:</i>
             </a>
             :
             <a href="/shop/category/acessorios/" class="category-specific">
                 <i class="fas fa-layer-group"></i>
-                <span>anéis</span>
+                <span>{{store.category_specific.name_specific}}</span>
             </a>
         </span>
     </div>
