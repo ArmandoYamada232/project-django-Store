@@ -4,16 +4,8 @@
 
 {% block content %}
 <div class="main-content main-content-list container">
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
-    {% include "store/partials/shop.html" %}
+    {% for store in stores %}
+        {% include "store/partials/shop.html" %}
+    {% endfor %}
 </div>
 {% endblock content %}
