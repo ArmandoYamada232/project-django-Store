@@ -1,9 +1,14 @@
+<!--Se a página estiver um id definido ela precisa receber o id quando for usar o name
+no caso colocar o id -->
+
 <div class="shop shop-list-item">
     <div class="shop-image">
-        <img src="{{ store.cover.url }}" alt="image-cover-shop">
+        <a href="{% url "store_app_name:store" store.id %}">
+            <img src="{{ store.cover.url }}" alt="image-cover-shop">
+        </a>
     </div>
     <div class="shop-title-container">
-        <a href="/store/3/">
+        <a href="{% url "store_app_name:store" store.id %}">
             <h2>{{ store.title }}</h2>
         </a>
     </div>
@@ -36,7 +41,7 @@
     </div>
     <div class="shop-preco">
         <span class="shop-preco-item">
-            <a href="/store/3/">R$ {{ store.price }}</a>
+            <a href="{% url "store_app_name:store" store.id %}">R$ {{ store.price }}</a>
         </span>
     </div>
 </div>

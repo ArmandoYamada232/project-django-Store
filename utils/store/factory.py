@@ -17,6 +17,10 @@ def make_shopp():
             min_value= 10.00,
             max_value= 280.00,
         ),
+        'id': fake.pyint(
+            min_value=1,
+            max_value=10,
+        ),
 
         'category': {
             'name': fake.word()
@@ -27,4 +31,6 @@ def make_shopp():
         'cover': {
             'url': 'https://picsum.photos/%s/%s' % rand_ratio(),
         },
+
+
     }

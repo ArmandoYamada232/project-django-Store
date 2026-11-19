@@ -1,7 +1,9 @@
+{% comment "tirar o link do hardcode e fazer ficar dinâmico é só utilizar ureli e o name definido na ureli" %}{% endcomment %}
+
 <header class="main-header-container">
     <div class="main-header container">
         <h1>
-            <a class="main-logo" href="#"><i class="fas fa-store main-logo-icon"></i>
+            <a class="main-logo" href=" {% url 'store_app_name:home' %}"><i class="fas fa-store main-logo-icon"></i>
                 <span class="main-logo-text">Store</span>
             </a>
         </h1>
