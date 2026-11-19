@@ -1,0 +1,4 @@
+model é uma tabela na base de dados em python que o django converte para tabela na base de dados
+
+como criar?
+Escrever uma classe em models
