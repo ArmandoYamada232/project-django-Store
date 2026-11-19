@@ -12,10 +12,14 @@
             <a href=""><i class="fas fa-user icone-author"></i>{{ store.store_name }}</a>
         </span>
 
+
+        {% comment "abre chave porcentagem uif e a condição fechando a tag com endif" %}{% endcomment %}
+        {% if is_shopp_page is not True %}
         <span class="shop-author-item">
             <i class="fas fa-calendar-alt"></i>
             16/10/2021 às 11:21
         </span>
+        {% endif %}
 
         <!--categoria vai para todas as categorias-->
         <!--categoria aneis irá só para aneis-->

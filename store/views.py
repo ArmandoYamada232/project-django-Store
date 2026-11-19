@@ -10,4 +10,5 @@ def home(request):
 def store(request, id):
     return render(request, 'store/pages/shop-view.html', status=200, context={
         'store': make_shopp(),
+        'is_shopp_page': True,
     })
